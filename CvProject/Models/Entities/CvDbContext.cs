@@ -26,6 +26,7 @@ namespace CvProject.Models.Entities
         public virtual DbSet<Hobby> Hobbies { get; set; } = null!;
         public virtual DbSet<Skill> Skills { get; set; } = null!;
         public virtual DbSet<SocialMedia> SocialMedias { get; set; } = null!;
+        public virtual DbSet<Project> Projects { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -194,6 +195,17 @@ namespace CvProject.Models.Entities
                   .IsUnicode(false);
 
 
+            });
+            modelBuilder.Entity<Project>(entity =>
+            {
+                entity.ToTable("Project");
+
+                entity.Property(e => e.ProjectName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+                entity.Property(e => e.ProjectUrl)
+                  .HasMaxLength(100)
+                  .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

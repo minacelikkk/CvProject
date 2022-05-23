@@ -1,0 +1,18 @@
+﻿@using CvProject.Models.Entities
+@model List<Project>
+
+<section class="resume-section" id="projects">
+	<div class="resume-section-content">
+		<h2 class="mb-5">Projelerim</h2>
+		<ul class="fa-ul mb-0">
+			@foreach (var item in Model)
+			{
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+					@item.ProjectName  /  <a href="  @item.ProjectUrl" >@item.ProjectUrl</a> 
+				</li>
+			}
+		</ul>
+	</div>
+</section>
+

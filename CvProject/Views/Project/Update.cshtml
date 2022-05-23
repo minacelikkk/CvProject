@@ -1,0 +1,23 @@
+﻿@model CvProject.Models.Entities.Project
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<form method="post" class="col md-12">
+    <h2>Sertifika Güncelleme Sayfası</h2>
+    <br />
+
+    @Html.Label("Proje İsmi")
+    @Html.TextBoxFor(x => x.ProjectName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Url")
+    @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info ">Güncelle</button>
+</form>
+
+
+
+

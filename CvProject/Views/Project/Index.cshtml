@@ -1,10 +1,10 @@
 ﻿@using CvProject.Models.Entities
-@model List<Certificate>
-
+@model List<Project>
 @{
-	ViewBag.Title = "Index";
+	ViewData["Title"] = "Index";
 	Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
 <!DOCTYPE html>
 <html>
 <body class="hold-transition sidebar-mini">
@@ -21,23 +21,22 @@
 									{
 
 										<div class="time-label">
-											<a href="/Certificate/Update/@item.Id" class="btn btn-success">
-												<span class="bg-success">
-													@item.Date
+											<a href="/Project/Update/@item.Id" class="btn btn-info">
+												<span class="bg-info">
+													@item.ProjectName
 												</span>
 											</a>
 										</div>
 										<div>
 											<div class="timeline-item">
 												<div class="timeline-body">
-													@item.Description
+													<a class="social-icon" href="@item.ProjectUrl">@item.ProjectUrl</a>
 												</div>
 											</div>
 										</div>
-
 									}
 								</div>
-								<a href="/Certificate/Add/" class="btn btn-info">Sertifika Ekle</a>
+								<a href="/Project/Add/" class="btn btn-success">Sertifika Ekle</a>
 
 							</div>
 						</div>
@@ -48,4 +47,7 @@
 	</section>
 </body>
 </html>
+
+
+
 

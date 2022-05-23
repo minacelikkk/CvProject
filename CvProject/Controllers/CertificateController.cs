@@ -18,16 +18,17 @@ namespace CvProject.Controllers
             var value=_certificateRepository.Find(x => x.Id == id);
             return View();
         }
-        [HttpGet]
-        public IActionResult Add()
-        {
-            return View();
-        }
+      
         public IActionResult Delete(int id)
         {
             var value = _certificateRepository.Find(x => x.Id == id);
             _certificateRepository.Delete(value);
             return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
         }
         [HttpPost]
         public IActionResult Add(Certificate certificate)

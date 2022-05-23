@@ -1,0 +1,22 @@
+﻿@model CvProject.Models.Entities.Project
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<form method="post" class="col md-12">
+    <h2>Yeni Proje Ekleme</h2>
+    <br />
+    @Html.Label("Proje İsmi")
+    @Html.TextBoxFor(x => x.ProjectName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.ProjectName,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Url")
+    @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "form-control" })
+     @Html.ValidationMessageFor(x => x.ProjectUrl,null,new { @class = "text-danger" })
+    <br />
+    <button class="btn btn-info ">Ekle</button>
+</form>
+
+
