@@ -1,16 +1,19 @@
 ﻿@using CvProject.Models.Entities
 @model List<Hobby>
 
-@foreach (var item in Model)
-{
-	<section class="resume-section" id="interests">
-		<div class="resume-section-content">
-			<h2 class="mb-5">Hobilerim</h2>
-			<p>@item.Description</p>
-			<p class="mb-0">@item.Description2</p>
-		</div>
-	</section>
-}
+<section class="resume-section" id="interests">
+	<div class="resume-section-content">
+		<h2 class="mb-5">Hobilerim</h2>
+		@foreach (var item in Model)
+		{
+			<div>
+			<p>@item.Description  / @item.Description2</p> 
+			</div>
+
+		}
+
+	</div>
+</section>
 
 
 
