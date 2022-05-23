@@ -1,0 +1,20 @@
+﻿@model CvProject.Models.Entities.Skill
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<form method="post" class="col md-12">
+    <h2>Yetenek Güncelleme Sayfası</h2>
+    <br />
+    @Html.Label("Yetenek Adı")
+    @Html.TextBoxFor(x => x.Skill1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Oran")
+    @Html.TextBoxFor(x => x.Oran, new { @class = "form-control" })
+    <br />  
+    <button class="btn btn-info ">Güncelle</button>
+</form>
+
+

@@ -1,0 +1,41 @@
+﻿@using CvProject.Models.Entities
+@model List<About>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+<form method="post" class="col md-12">
+	<h2>Hakkımda Düzenleme Sayfası</h2>
+	@foreach (var item in Model)
+	{
+		<br />
+		@Html.Label("Ad")
+		<textarea rows="1" class="form-control" name="FirstName">@item.FirstName</textarea>
+		<br />
+		@Html.Label("Soyad")
+		<textarea rows="1" class="form-control" name="LastName">@item.LastName</textarea>
+		<br />
+		@Html.Label("Telefon")
+		<textarea rows="1" class="form-control" name="Telephone">@item.Telephone</textarea>
+		<br />
+		@Html.Label("Email")
+		<textarea rows="1" class="form-control" name="Email">@item.Email</textarea>
+		<br />
+		@Html.Label("Açıklama")
+		<textarea rows="3" class="form-control" name="Description">@item.Description</textarea>
+		<br />
+		@Html.Label("Resim")
+		<textarea rows="1" class="form-control" name="Image">@item.Image</textarea>
+		<br />
+		@Html.Label("Adres")
+		<textarea rows="1" class="form-control" name="Address">@item.Address</textarea>
+		<br />
+		<button class="btn btn-info ">Güncelle</button>
+		<br />
+
+	}
+</form>
+

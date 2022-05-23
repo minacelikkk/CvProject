@@ -1,0 +1,34 @@
+﻿@model CvProject.Models.Entities.Education
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<form method="post" class="col md-12">
+    <h2>Yeni Eğitim Ekleme</h2>
+    <br />
+    @Html.Label("Okul")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Subtitle,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Bölüm")
+    @Html.TextBoxFor(x => x.Subtitle, new { @class = "form-control" })
+     @Html.ValidationMessageFor(x => x.Subtitle,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Fakülte")
+    @Html.TextBoxFor(x => x.Subtitle2, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Subtitle,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Not Ortalaması")
+    @Html.TextAreaFor(x => x.Gpa, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Subtitle,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextAreaFor(x => x.Date, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Subtitle,null,new { @class = "text-danger" })
+    <br />
+    <button class="btn btn-info ">Ekle</button>
+</form>
+
+

@@ -1,0 +1,21 @@
+﻿@model CvProject.Models.Entities.Certificate
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<form method="post" class="col md-12">
+    <h2>Yeni Eğitim Ekleme</h2>
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Description,null,new { @class = "text-danger" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+     @Html.ValidationMessageFor(x => x.Date,null,new { @class = "text-danger" })
+    <br />
+    <button class="btn btn-info ">Ekle</button>
+</form>
+
