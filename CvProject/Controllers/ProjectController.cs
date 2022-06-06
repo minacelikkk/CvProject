@@ -28,7 +28,7 @@ namespace CvProject.Controllers
         public IActionResult Update(int id)
         {
             var value = _projectRepository.Find(x => x.Id == id);
-            return View();
+            return View(value);
         }
 
         [HttpPost]

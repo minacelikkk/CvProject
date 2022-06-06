@@ -42,7 +42,7 @@ namespace CvProject.Controllers
         {
             var value = _certificateRepository.Find(x => x.Id == id);
             ViewBag.d = id;
-            return View();
+            return View(value);
         }
 
         [HttpPost]

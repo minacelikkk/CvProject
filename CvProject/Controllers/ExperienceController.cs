@@ -37,9 +37,10 @@ namespace CvProject.Controllers
             return View(value);
         }
         [HttpGet]
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var updatedEntity = _experienceRepository.Get(id);
+            return View(updatedEntity);
         }
 
         [HttpPost]

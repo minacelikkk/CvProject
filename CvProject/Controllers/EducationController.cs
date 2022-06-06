@@ -33,9 +33,10 @@ namespace CvProject.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var updatedEntity = _educationRepository.Get(id);
+            return View(updatedEntity);
         }
 
         [HttpPost]
