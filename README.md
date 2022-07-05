@@ -6,6 +6,7 @@
 * Repository Design Pattern<br>
 * Code First Yaklaşımı<br>
 * View Component<br>
+* Razor Syntax
 ## Proje Ekran Görüntüleri
 
 ![InkedEkran görüntüsü 2022-07-05 205535](https://user-images.githubusercontent.com/78025622/177390287-502fd80a-2760-4b1e-bea4-80d0fb0ac292.jpg)
