@@ -8,7 +8,7 @@
 * View Component<br>
 ## Proje Ekran Görüntüleri
 
-![Ekran görüntüsü 2022-07-05 205535](https://user-images.githubusercontent.com/78025622/177389148-723fb919-48db-43b5-ac97-77bee0bb6bee.png)
+![InkedEkran görüntüsü 2022-07-05 205535](https://user-images.githubusercontent.com/78025622/177390287-502fd80a-2760-4b1e-bea4-80d0fb0ac292.jpg)
 ![Ekran görüntüsü 2022-07-05 205552](https://user-images.githubusercontent.com/78025622/177389128-0cccf009-c7fc-4b07-b5d3-db804f0c15ce.png)
 ![Ekran görüntüsü 2022-07-05 205624](https://user-images.githubusercontent.com/78025622/177389131-6154f55e-a878-4507-bbe1-d52292c5fb2a.png)
 ![Ekran görüntüsü 2022-07-05 205644](https://user-images.githubusercontent.com/78025622/177389137-6d2d5f21-3896-4d8b-869b-21570b5f9dce.png)
