@@ -1,12 +1,18 @@
-## Dinamik .NET Core 6 Cv Projesidir.
-> AdminLTE-3.0.4 teması kullanılmıştır.<br>
-> Tema linki: [AdminLTE](https://adminlte.io/themes/v3/).
-## Kullanılan Teknolojiler
-* .NET Core Mvc<br>
-* Repository Design Pattern<br>
-* Code First Yaklaşımı<br>
-* View Component<br>
-* Razor Syntax
+# 💼 CvProject
+
+Dinamik bir CV yönetim sistemi. Kullanıcılar; kişisel bilgiler, eğitimler, deneyimler, beceriler ve projeleri gibi CV içeriklerini kolayca ekleyip güncelleyebilir. Proje, ASP.NET Core 6 MVC mimarisi kullanılarak geliştirilmiştir.
+
+## 🛠️ Kullanılan Teknolojiler
+
+- ⚙️ ASP.NET Core 6
+- 🗂️ Repository Design Pattern
+- 💾 Entity Framework Core (Code First)
+- 🎨 Razor View Engine
+- 🧩 ViewComponent
+- 🖥️ AdminLTE 3.0.4 Template
+- 🛡️ Identity (isteğe bağlı kullanıcı yönetimi için)
+
+
 ## Proje Ekran Görüntüleri
 
 ![InkedEkran görüntüsü 2022-07-05 205535](https://user-images.githubusercontent.com/78025622/177390287-502fd80a-2760-4b1e-bea4-80d0fb0ac292.jpg)
